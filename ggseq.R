@@ -1,3 +1,5 @@
+library("devtools")
+install_github("omarwagih/ggseqlogo")
 require(ggplot2)
 require(ggseqlogo)
 file <- read.table("random_results.csv",sep=",")
