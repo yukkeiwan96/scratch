@@ -40,12 +40,3 @@ ggplot(df, aes(x=model, y=MSE, color=Type)) +
                fun.ymax=function(x)(mean(x)+sd(x)),
                geom="errorbar", width=0.1) +
   theme_bw()
-
-library("devtools")
-install_github("omarwagih/ggseqlogo")
-require(ggplot2)
-require(ggseqlogo)
-tab=read.table(file="bottom100put_random_results.csv",sep=",")
-dnalist=as.vector(tab$V3)
-ggseqlogo(dnalist)
-ggplot() + geom_logo(dnalist, col_scheme='base_pairing') + theme_logo()
