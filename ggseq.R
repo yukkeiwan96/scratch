@@ -1,0 +1,6 @@
+require(ggplot2)
+require(ggseqlogo)
+file <- read.table("random_results.csv",sep=",")
+seq2 <- as.vector(file$V3)
+ggseqlogo(seq2)
+ggseqlogo(seq2,method='prob')
