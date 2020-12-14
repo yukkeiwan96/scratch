@@ -1,3 +1,4 @@
+# test
 dat <- read.table("IBD.txt",header=T,na.strings="NA",blank.lines.skip=F,row.names=1)
 col_names <- paste(names(dat)[1:13], "normal", sep=" ")
 colnames(dat)[1:13] <- col_names
